@@ -10,7 +10,7 @@ function parImpar(num) {
     }
 }
 
-parImpar(3)
-parImpar(6)
+parImpar(3) // yo eligo 3  y me dice → Es impar
+parImpar(6) 
 parImpar(9)
 
