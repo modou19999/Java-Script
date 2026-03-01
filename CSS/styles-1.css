@@ -1,0 +1,39 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(81, 79, 79);
+  color: rgb(169, 146, 110);
+}
+
+/* eje 2*/
+.caja-color {
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+.rojo {
+  background-color: rgb(189, 113, 113);
+}
+
+.caja-color1 {
+  background-color: rgb(159, 100, 27);
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+.white {
+  background-color: white;
+}
+
+/* eje 3 */
+.contador {
+  background-color: bisque;
+  width: 48px;
+  text-align: center;
+}
