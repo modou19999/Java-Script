@@ -8,6 +8,9 @@
 body {
   background-color: rgb(81, 79, 79);
   color: rgb(169, 146, 110);
+  margin-left: 10px;
+  min-height: 100vh;
+  max-height: 900vh;
 }
 
 /* eje 2*/
@@ -36,4 +39,15 @@ body {
   background-color: bisque;
   width: 48px;
   text-align: center;
+}
+
+/* eje 4 */
+.paragraph {
+  display: none;
+}
+.mostrar {
+  display: block;
+}
+.enseñalo {
+  display: block;
 }

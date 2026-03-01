@@ -61,3 +61,59 @@ menos.addEventListener("click", function () {
   contador--;
   contadorElement.textContent = contador;
 });
+
+//v2
+let contador1 = 0;
+
+const contador1Element = document.querySelector("#contador1");
+const plus = document.querySelector("#plus");
+const rest = document.querySelector("#rest");
+
+plus.addEventListener("click", function () {
+  contador1++;
+  contador1Element.textContent = contador1;
+});
+
+rest.addEventListener("click", function () {
+  contador1--;
+  contador1Element.textContent = contador1;
+});
+
+// eje 4- Mostrar / ocultar contenido
+let paragraph = document.querySelector("#paragraph");
+let button5 = document.querySelector("#button5");
+
+button5.addEventListener("click", function () {
+  paragraph.classList.toggle("mostrar");
+
+  // cambiamos el texto segun el estado
+  if (paragraph.classList.contains("mostrar")) {
+    button5.textContent = "Ocultar";
+  } else {
+    button5.textContent = "Mostrar";
+  }
+});
+
+// v2
+let paragraph1 = document.querySelector("#paragraph1");
+let button6 = document.querySelector("#button6");
+
+button6.addEventListener("click", function () {
+  paragraph1.classList.toggle("enseñalo");
+
+  if (paragraph1.classList.contains("enseñalo")) {
+    button6.textContent = "Ocultame";
+  } else {
+    button6.textContent = "Enseñame";
+  }
+});
+
+// eje 5- Mini formulario interactivo
+let inputNombre = document.querySelector("#inputNombre");
+let button7 = document.querySelector("#button7");
+const mensaje = document.querySelector("#mensaje");
+
+button7.addEventListener("click", function () {
+  let nameWrite = inputNombre.value;
+  mensaje.textContent = "Hola " + nameWrite;
+});
