@@ -28,15 +28,50 @@ footer {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  text-align: center;
   background-color: var(--card);
   align-items: center;
+}
+.strong {
+  margin-left: 30px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  gap: 30px;
+}
+a {
+  height: 30px;
+  width: 70px;
+  border: 1px #ff3c00 solid;
+  text-decoration: none;
+  color: var(--text);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+a:hover {
+  background-color: var(--accent);
+  color: var(--card);
+}
+
+button {
+  border: 0;
+  width: 70px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+button:hover {
+  background-color: var(--accent);
+  color: var(--card);
 }
 
 header {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 600px;
 }
 h1 {
   color: var(--accent);
@@ -49,6 +84,7 @@ h1 {
   margin-bottom: 60px;
 }
 ul {
+  height: 164px;
   display: flex;
   justify-content: space-between;
   margin: 0 50px 0 50px;
@@ -68,4 +104,5 @@ li {
 }
 li:hover {
   background-color: var(--accent);
+   color: var(--card);
 }
