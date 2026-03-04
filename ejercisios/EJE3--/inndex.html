@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Producto Pro</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="gallery">
+        <img id="mainImage" src="https://picsum.photos/400?1" />
+        <div class="thumbnails">
+          <img src="https://picsum.photos/400?1" />
+          <img src="https://picsum.photos/400?2" />
+          <img src="https://picsum.photos/400?3" />
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>Zapatillas Pro-X</h2>
+        <p class="price">$120</p>
+
+        <div class="colors">
+          <span
+            class="color active"
+            data-color="red"
+            style="background: red"
+          ></span>
+          <span class="color" data-color="blue" style="background: blue"></span>
+          <span
+            class="color"
+            data-color="black"
+            style="background: black"
+          ></span>
+        </div>
+
+        <div class="quantity">
+          <button id="minus">-</button>
+          <span id="count">1</span>
+          <button id="plus">+</button>
+        </div>
+
+        <div class="rating">
+          <span data-rate="1">★</span>
+          <span data-rate="2">★</span>
+          <span data-rate="3">★</span>
+          <span data-rate="4">★</span>
+          <span data-rate="5">★</span>
+        </div>
+
+        <button id="addToCart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>Producto agregado correctamente ✅</p>
+        <button id="closeModal">Cerrar</button>
+      </div>
+    </div>
+  </body>
+</html>
