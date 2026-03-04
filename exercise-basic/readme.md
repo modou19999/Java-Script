@@ -1,4 +1,7 @@
+<!-- @format -->
+
 # Aprende:
+
 Variables (let, const)
 Tipos de datos
 Condicionales (if, else)
@@ -8,17 +11,17 @@ Arrays
 Objetos
 
 - No toques frameworks todavía. Nada de React, Node, etc.
-Fase 2:
- Manipular el DOM (cuando ya entiendas lo básico)
-document.querySelector
-Eventos (click, submit)
-Cambiar texto o estilos con JS
+  Fase 2:
+  Manipular el DOM (cuando ya entiendas lo básico)
+  document.querySelector
+  Eventos (click, submit)
+  Cambiar texto o estilos con JS
 
 - Haz mini proyectos:
-Contador de clicks
-Lista de tareas simple
-Generador de colores random
-Videos de MDN Web Docs (documentación oficial, muy buena)
+  Contador de clicks
+  Lista de tareas simple
+  Generador de colores random
+  Videos de MDN Web Docs (documentación oficial, muy buena)
 
 - Fase 3: Proyectos pequeños
 
@@ -28,17 +31,16 @@ Adivinar número
 Cronómetro
 Mini carrito de compras
 
-
-
 - 🛠 4. Método anti-atasco
-Cuando no entiendas algo:
-Escríbelo tú mismo.
-Rompe el problema en partes.
-Usa console.log() en todo.
-Intenta explicarlo en voz alta como si enseñaras.
-Si no puedes explicarlo, no lo entiendes todavía. Y está bien.
+  Cuando no entiendas algo:
+  Escríbelo tú mismo.
+  Rompe el problema en partes.
+  Usa console.log() en todo.
+  Intenta explicarlo en voz alta como si enseñaras.
+  Si no puedes explicarlo, no lo entiendes todavía. Y está bien.
 
 # Nivel Básico
+
 Imprime por consola el string 'Hello World'.
 
 Declara una variable de las dos formas posibles, e imprime por consola los dos valores.
@@ -72,21 +74,23 @@ Adivina el número: Crea una función que primero guarde en una variable un núm
 # Dudas
 
 # Math
+
 - Para generar un número al azar en JavaScript se usa Math.random().
 
-Math.random()      → devuelve un número decimal entre 0 y 10.
-Math.random()      → devuelve un número decimal entre 0 y 1.
-Math.random() * 11 → escala el número a 0 hasta casi 11.
-Math.floor()       → redondea hacia abajo para obtener un número entero entre 0 y 10.
-console.log()      → imprime el resultado.
+Math.random() → devuelve un número decimal entre 0 y 10.
+Math.random() → devuelve un número decimal entre 0 y 1.
+Math.random() \* 11 → escala el número a 0 hasta casi 11.
+Math.floor() → redondea hacia abajo para obtener un número entero entre 0 y 10.
+console.log() → imprime el resultado.
 
 - Si quisieras entenderlo a nivel más profundo:
-Math.random() → número decimal entre 0 (incluido) y 1 (excluido)
-* 11 → escala el rango a 0–10.999...
-Math.floor() → elimina los decimales → 0–10
+  Math.random() → número decimal entre 0 (incluido) y 1 (excluido)
 
+* 11 → escala el rango a 0–10.999...
+  Math.floor() → elimina los decimales → 0–10
 
 # sacar par o impar
+
 % → operador módulo (resto de la división)
 numero % 2 → divide entre 2
 Si el resto es 0 → es par
