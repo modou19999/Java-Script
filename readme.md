@@ -1,3 +1,7 @@
+<!-- @format -->
+
+java script basico medio y una explicacion
+
 Asociación entre clases
 Definir la estructura de un objeto que almacena una factura (Invoice)
 
@@ -13,16 +17,7 @@ Una vez definidas las propiedades del objeto
 
 Se incluyen 2 métodos públicos
 
-1) calcula el importe total de la factura y actualice el valor de la propiedad correspondiente.
-2) muestre por pantalla el importe total de la factura en un formato adecuado.
-3) muestre por pantalla toda la factura en un formato adecuado.
-Opción: el primero de los métodos debería redefinirse como privado.
-
-
-// propiedades privadas
-    #empresa;
-    #cliente;
-    #elementos;
-    #importeTotal;
-    #tipoIVA;
-    #formaPago;
+1. calcula el importe total de la factura y actualice el valor de la propiedad correspondiente.
+2. muestre por pantalla el importe total de la factura en un formato adecuado.
+3. muestre por pantalla toda la factura en un formato adecuado.
+   Opción: el primero de los métodos debería redefinirse como privado.
