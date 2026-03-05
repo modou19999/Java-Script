@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --body: #1e3a8a;
+  --text: #ffffff;
+  --menu-hover: #3b82f6;
+  --borde-menu: #e5e7eb;
+  --menu-caja: #111827;
+}
+
+body {
+  background-color: var(--body);
+  color: var(--text);
+
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 50px;
+}
+
+/* div class list container */
+.div-list {
+  border: 1px solid;
+  display: grid;
+}
+
+.ul-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.list {
+}
+a {
+  color: var(--text);
+}
