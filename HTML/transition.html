@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #f0f0f0; /* fondo general */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #ffffff; /* fondo del contenido */
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 8); /* sombra */
+        border-radius: 10px; /* opcional, bordes redondeados */
+        transition:
+          box-shadow 0.3s ease,
+          transform 0.3s ease; /* <-- transición */
+      }
+
+      .container:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* sombra más intensa */
+        transform: translateY(-5px); /* efecto sutil de movimiento */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GYM AESTHE</h1>
+      <p>Esto tiene sombra alrededor.</p>
+    </div>
+    <div class="container">
+      <h2>GYM AESTHE</h2>
+      <p>Esto tiene sombra alrededor.</p>
+    </div>
+    <div class="container">
+      <h2>GYM AESTHE</h2>
+      <p>Esto tiene sombra alrededor.</p>
+    </div>
+  </body>
+</html>

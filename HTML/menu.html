@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ees">
+  <head>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+      }
+
+      .navbar .logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Menú hamburguesa */
+      .menu-toggle {
+        display: none; /* solo se muestra en móvil */
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        margin: 4px 0;
+        transition: 0.3s;
+      }
+
+      /* Lista de enlaces */
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .nav-links li a:hover {
+        color: #ff6600;
+      }
+
+      /* Responsive - móvil */
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: flex;
+        }
+
+        .nav-links {
+          position: absolute;
+          top: 60px;
+          right: 0;
+          background-color: #333;
+          flex-direction: column;
+          width: 200px;
+          display: none; /* oculto por defecto */
+          padding: 10px;
+          border-radius: 0 0 10px 10px;
+        }
+
+        .nav-links li {
+          margin: 10px 0;
+        }
+
+        .nav-links.active {
+          display: flex; /* se muestra al hacer clic */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MiWeb</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <!-- Las tres rayitas de la hamburguesa -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

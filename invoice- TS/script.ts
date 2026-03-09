@@ -1,23 +1,33 @@
 /** @format */
 
-{
-  // Empresa, (nombre, direccion, telefono, nif)
-  // cliente = empresa
-  //Elementos, (descripcion, precio, cantida)
-  //Factura, (importe total, tipo de iva, forma de pago)
-  //////privada
-  // 2 metodos publicos
-  // Un getter se usa para obtener el valor de una propiedad.
-  // Un setter se usa para modificar o asignar un valor a una propiedad.
-}
-
 //EMPRESA / cliente
 export class Empresa {
-  constructor(name, address, telephon, NIF) {
-    this.name = name;
-    this.address = address;
-    this.telephon = telephon;
-    this.NIF = NIF;
+  #name;
+  #address;
+  #telephone;
+  #NIF;
+
+  get name() {
+    return this.#name;
+  }
+  get address() {
+    return this.#address;
+  }
+  get telephone() {
+    return this.#telephone;
+  }
+  get NIF() {
+    return this.#NIF.toUpperCse();
+  }
+
+  constructor(name, address, telephone, NIF) {
+    this.#name = name;
+    this.#address = address;
+    this.#telephone = telephone;
+    this.#NIF = NIF;
+  }
+  returnInfo() {
+    return `${this.#name} - ${this.#address} - ${this.#telephone}`;
   }
 }
 
