@@ -40,17 +40,25 @@ let vacio = null; // null
 
 let suma = 5 + 3; // 8
 let resta = 10 - 4; // 6
-let multiplicacion = 3 * 4; // 12
+let multiple = 3 * 4; // 12
 let division = 20 / 5; // 4
 let modulo = 10 % 3; // 1
 let potencia = 2 ** 3; // 8
 // Comparación:
 
 5 == "5"; // true (igual valor)
+
 5 === "5"; // false (igual valor Y tipo)
+
+
 5 != 3; // true (diferente)
+
 5 !== "5"; // true (diferente valor O tipo)
+
 5 > 3; // true
+
 5 < 10; // true
+
 5 >= 5; // true
+
 5 <= 4; // false

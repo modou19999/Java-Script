@@ -117,3 +117,4 @@ button7.addEventListener("click", function () {
   let nameWrite = inputNombre.value;
   mensaje.textContent = "Hola " + nameWrite;
 });
+
