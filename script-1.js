@@ -118,3 +118,5 @@ button7.addEventListener("click", function () {
   mensaje.textContent = "Hola " + nameWrite;
 });
 
+
+
