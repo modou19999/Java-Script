@@ -1,0 +1,31 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+ background-color: rgb(24, 22, 22);
+
+ display: grid;
+ justify-content: center;
+ align-self: center;
+}
+
+/* section*/
+.container {
+    background-color: rgba(66, 60, 51, 0.932);
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 10%;
+    padding-top: 40px;
+    padding-left: 15px;
+
+    box-shadow: 10px 0 15px 5px black;
+}
+
+
+.visual {
+    
+}
