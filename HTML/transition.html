@@ -1,15 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GYM·AESTHE®</title>
+    <script type="module" src="transition.js" defer></script>
 
     <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+
       body {
         margin: 0;
         background-color: #f0f0f0; /* fondo general */
-        display: flex;
+      }
+
+      .main-section {
+        display: grid;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -29,20 +39,130 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* sombra más intensa */
         transform: translateY(-5px); /* efecto sutil de movimiento */
       }
+
+      .title {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+      }
+
+      .nav {
+        display: grid;
+        justify-content: end;
+        align-items: center;
+      }
+
+      ul {
+        list-style: none;
+        gap: 1px;
+        /* display: inline; */
+      }
+
+      li {
+        margin-top: 30px;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      /* desde */
+      .menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .menu span {
+        height: 4px;
+        width: 25px;
+        background: rgb(29, 28, 28);
+        margin: 4px;
+      }
+
+      @media (max-width: 2000px) {
+        .menu {
+          display: flex;
+        }
+
+        ul {
+          position: absolute;
+          top: 60px;
+          right: 0;
+          /*background-color:  transparent;*/
+          background-color: rgb(43, 41, 41);
+          color: #ffffff;
+          flex-direction: column;
+          width: 200px;
+          height: 600px;
+          display: none;
+          border-radius: 10px;
+
+          /* transparencia*/
+          opacity: 0.7;
+        }
+
+        ul.active {
+          display: flex;
+        }
+      }
+
+      /* hasta aqui */
+
+      .footer {
+        background-color: #e7d2d2;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>GYM AESTHE</h1>
-      <p>Esto tiene sombra alrededor.</p>
-    </div>
-    <div class="container">
-      <h2>GYM AESTHE</h2>
-      <p>Esto tiene sombra alrededor.</p>
-    </div>
-    <div class="container">
-      <h2>GYM AESTHE</h2>
-      <p>Esto tiene sombra alrededor.</p>
-    </div>
+    <header class="title">
+      <h1>GYM·AESTHE®</h1>
+
+      <nav class="nav">
+        <div class="menu" id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul id="menu-list">
+          <li>
+            <a href="#">STOCK</a>
+          </li>
+          <li>
+            <a href="#">NEW</a>
+          </li>
+          <li>
+            <a href="#">MEN</a>
+          </li>
+          <li>
+            <a href="#">WOMEN</a>
+          </li>
+          <li>
+            <a href="#">BOYS</a>
+          </li>
+          <li>
+            <a href="#">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main-section">
+      <div class="container">
+        <h1>GYM AESTHE</h1>
+        <p>Esto tiene sombra alrededor.</p>
+      </div>
+      <div class="container">
+        <h2>GYM AESTHE</h2>
+        <p>Esto tiene sombra alrededor.</p>
+      </div>
+      <div class="container">
+        <h2>GYM AESTHE</h2>
+        <p>Esto tiene sombra alrededor.</p>
+      </div>
+    </section>
+    <footer class="footer">&copy; GYM·AESTHE® | GYM·SHARK®</footer>
   </body>
 </html>

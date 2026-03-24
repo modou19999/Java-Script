@@ -1,16 +1,9 @@
 <!-- @format -->
 
 <!doctype html>
-<html lang="ees">
+<html lang="es">
   <head>
-    <script>
-      const toggle = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-
-      toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
+<script type="module" src="javascrip.js" defer></script>
     <style>
       body {
         margin: 0;
@@ -64,7 +57,7 @@
       }
 
       /* Responsive - móvil */
-      @media (max-width: 768px) {
+      @media (max-width: 2000px) {
         .menu-toggle {
           display: flex;
         }
@@ -90,10 +83,11 @@
         }
       }
     </style>
+ 
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">MiWeb</div>
+      <h1 class="logo">MiWeb</h1>
       <div class="menu-toggle" id="menu-toggle">
         <!-- Las tres rayitas de la hamburguesa -->
         <span></span>
