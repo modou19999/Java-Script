@@ -1,0 +1,137 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f0f0; /* fondo general */
+}
+
+.main-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff; /* fondo del contenido */
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 8); /* sombra */
+  border-radius: 10px; /* opcional, bordes redondeados */
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease; /* <-- transición */
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* sombra más intensa */
+  transform: translateY(-5px); /* efecto sutil de movimiento */
+}
+
+.title {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  background-color: rgb(209, 206, 206);
+  box-shadow: 0 0.5px 0 0 #000000;
+}
+
+.nav {
+  display: grid;
+  justify-content: end;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  gap: 1px;
+  /* display: inline; */
+}
+
+li {
+  margin-top: 30px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b3b3b3;
+}
+
+/* desde */
+.menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu span {
+  height: 4px;
+  width: 25px;
+  background: rgb(29, 28, 28);
+  margin: 4px;
+}
+
+@media (max-width: 2000px) {
+  .menu {
+    display: flex;
+  }
+
+  ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    /*background-color:  transparent;*/
+    background-color: rgb(43, 41, 41);
+    color: #ffffff;
+    flex-direction: column;
+    width: 200px;
+    height: 600px;
+    display: none;
+    border-radius: 10px;
+
+    /* transparencia*/
+    opacity: 0.7;
+  }
+
+  ul.active {
+    display: flex;
+  }
+}
+
+/* hasta aqui */
+
+.footer {
+  padding-bottom: 30px;
+  background-color: rgb(209, 206, 206);
+  box-shadow: 0 0 0 0.5px #000000;
+  text-align: center;
+}
