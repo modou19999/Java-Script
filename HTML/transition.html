@@ -41,10 +41,12 @@
       }
 
       .title {
-        margin-left: 20px;
+        padding: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
+        background-color: rgb(209, 206, 206);
+        box-shadow: 0 0.5px 0 0 #000000;
       }
 
       .nav {
@@ -113,9 +115,13 @@
       }
 
       /* hasta aqui */
-
+      .stock {
+        display: none;
+      }
       .footer {
-        background-color: #e7d2d2;
+        padding-bottom: 30px;
+        background-color: rgb(209, 206, 206);
+        box-shadow: 0 0 0 0.5px #000000;
         text-align: center;
       }
     </style>
@@ -133,7 +139,7 @@
 
         <ul id="menu-list">
           <li>
-            <a href="#">STOCK</a>
+            <a href="#stock">STOCK</a>
           </li>
           <li>
             <a href="#">NEW</a>
@@ -153,18 +159,39 @@
         </ul>
       </nav>
     </header>
-    <section class="main-section">
+    <section class="main-section" target="_blank">
       <div class="container">
-        <h1>GYM AESTHE</h1>
+        <h2>GYM AESTHE</h2>
         <p>Esto tiene sombra alrededor.</p>
+        <input type="button" value="comprar" class="input" />
       </div>
       <div class="container">
         <h2>GYM AESTHE</h2>
         <p>Esto tiene sombra alrededor.</p>
+        <input type="button" value="comprar" class="input" />
       </div>
       <div class="container">
         <h2>GYM AESTHE</h2>
         <p>Esto tiene sombra alrededor.</p>
+        <input type="button" value="comprar" class="input" />
+      </div>
+    </section>
+
+    <section class="stock main-section" id="stock">
+      <div class="container">
+        <h2>GYM AESTHE</h2>
+        <p>Esto es para ver descripciones y poner precioses stock.</p>
+        <input type="button" value="comprar" class="input" />
+      </div>
+      <div class="container">
+        <h2>GYM AESTHE</h2>
+        <p>Esto tiene sombra alrededor.</p>
+        <input type="button" value="comprar" class="input" />
+      </div>
+      <div class="container">
+        <h2>GYM AESTHE</h2>
+        <p>Esto tiene sombra alrededor.</p>
+        <input type="button" value="comprar" class="input" />
       </div>
     </section>
     <footer class="footer">&copy; GYM·AESTHE® | GYM·SHARK®</footer>
