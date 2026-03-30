@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* El navegador ajusta el contenido para que todo quepa dentro. */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* nav class .navbar contenido */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* ul con class links su contenido */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+/* dentro de ul esta li y dentro "a" */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* div class hamburguesa todo su contenido */
+.hamburger {
+        display: none; /*  ver para que sirve */
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+}
+/* contenido span */
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+
+/* 📱 Responsive */
+/* @media “Si la pantalla cumple esta condición, cambia el diseño.” */
+@media (max-width: 768px){
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #222;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
