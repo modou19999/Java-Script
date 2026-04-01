@@ -1,6 +1,6 @@
-import './style.css';
+import './componentes/styles.css';
 import javascriptLogo from './assets/javascript.svg';
-import viteLogo from './assets/vite.svg';
+import viteLogo from '/assets/vite.svg';
 import heroImg from './assets/hero.png';
 import { setupCounter } from './counter.js';
 import { initHeader } from './components/header.js';
@@ -12,6 +12,7 @@ initHeader();
 initClases();
 initContact();
 initFooter();
+setupCounter();
 
 const menu = document.getElementById('menu');
 const menuList = document.getElementById('menu-list');
