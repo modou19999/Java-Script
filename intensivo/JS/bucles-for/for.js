@@ -1,7 +1,8 @@
 /** @format */
 
 // for sirve para repetir algo varias veces automáticamente.
-{ // esto es un ejemplo defor of
+{
+  // esto es un ejemplo defor of
 
   let frutas = ["manzana", "pera", "naranja", "plátano"];
   for (let fruta of frutas) {
@@ -15,6 +16,8 @@
   }
 }
 
-for (let i = 8; i > 0; i--) {
-  console.log(`Quedan ${i} i`);
+{
+  for (let i = 8; i > 0; i--) {
+    console.log(`Quedan ${i} i`);
+  }
 }

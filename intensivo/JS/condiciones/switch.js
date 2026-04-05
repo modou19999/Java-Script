@@ -59,3 +59,32 @@
   menu("Pizza");
   menu("sushi");
 }
+
+{
+  function makeGreeting(lenguage) {
+    let grtting = "Hello";
+
+    switch (lenguage) {
+      case "Spanish":
+        grtting = "Hola amigo";
+        break;
+
+      case "Frances":
+        grtting = "Bonjour mon ami";
+        break;
+
+      case "English":
+        grtting = "Hello my friend";
+        break;
+
+      default:
+        gretingo = "Idioma no encontrado";
+        break;
+    }
+
+    return grtting;
+  }
+  const lenguage = "Spanish";
+
+  console.log(makeGreeting(lenguage));
+}
