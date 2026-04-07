@@ -155,3 +155,10 @@
   licuadora.ponerEnOferta();
   licuadora.garantía(12);
 }
+
+/* ✅ Qué practicar con esto
+Crear varias instancias de productos diferentes
+Probar todos los métodos y ver cómo cambian las propiedades
+Modificar métodos para que devuelvan valores en lugar de solo console.log
+Crear más subclases (Ej: Ropa, Accesorios) que hereden de Producto
+Añadir un método que calcule el precio total con IVA */
