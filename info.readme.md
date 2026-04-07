@@ -326,13 +326,13 @@ puerto:
 5432
 }
 
-
 {
 https://sqlite.org/
 
 }
 
-{
+{// paginas que hay que ver
 
-   postman
+postman
+pandorafms (https://www.ilerna.es/blog)
 }
