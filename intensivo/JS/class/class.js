@@ -156,6 +156,7 @@
   licuadora.garantía(12);
 }
 
+<<<<<<< HEAD
 // privado
 {
   class Producto {
@@ -196,3 +197,11 @@
     }
   }
 }
+=======
+/* ✅ Qué practicar con esto
+Crear varias instancias de productos diferentes
+Probar todos los métodos y ver cómo cambian las propiedades
+Modificar métodos para que devuelvan valores en lugar de solo console.log
+Crear más subclases (Ej: Ropa, Accesorios) que hereden de Producto
+Añadir un método que calcule el precio total con IVA */
+>>>>>>> 042d9d9e9e7b641d47f52c21fcc2a0fae58e7cb5
