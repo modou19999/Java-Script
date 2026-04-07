@@ -155,3 +155,44 @@
   licuadora.ponerEnOferta();
   licuadora.garantía(12);
 }
+
+// privado
+{
+  class Producto {
+    // propiedades privadas
+    #nombre;
+    #precio;
+    #stock;
+    #oferta;
+
+    // constructor
+    constructor(nombre, precio, stock, oferta) {
+      // this con privacidad
+      this.#nombre = nombre;
+      this.#precio = precio;
+      this.#stock = stock;
+      this.#oferta = oferta;
+    }
+
+    // method
+    aplicarDescuento(porcentaje) {
+      this.#precio -= (this.#precio * porcentaje) / 100;
+      return this.#precio;
+    }
+
+    mostrarInfo() {
+      return `Producto: ${this.#nombre}, precio: ${this.#precio}$, stock: ${this.#stock}, oferta: ${this.#oferta}`;
+    }
+
+    ponerEnOferta() {
+      this.#oferta = true;
+      return `${this.#nombre} ahora esta en oferta`;
+    }
+
+    añadirStock(cantidad) {
+      if (cantidad <= 0) return "Cantidad invalida";
+      this.#stock += cantidad;
+      return this.#stock;
+    }
+  }
+}
