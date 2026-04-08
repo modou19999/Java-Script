@@ -154,7 +154,7 @@ https://www.enterprisedb.com/
 puerto:
 5432
 }
-
+docker run --name postgres-db -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin123 -e POSTGRES_DB=mi_db -p 5432:5432 -d postgres
 {
 https://sqlite.org/
 

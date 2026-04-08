@@ -5,5 +5,18 @@
     "perimetro",
     "rayitas",
     "Renderizador"
+  ],
+  "sqltools.connections": [
+    {
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "data1",
+      "database": "mi_db",
+      "username": "modou1999",
+      "password": "cursoalce"
+    }
   ]
 }
