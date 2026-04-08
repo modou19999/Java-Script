@@ -435,3 +435,55 @@ Si quieres, dime:
 👉 “uso Windows / Mac / Linux”
 
 y te doy exactamente los pasos correctos para tu caso sin errores 👍
+
+{
+Paso 1: Preparar el entorno
+Instalar Docker Desktop
+Ve a Docker Desktop
+y descárgalo.
+Instálalo y asegúrate de que esté corriendo.
+Abre una terminal (CMD, PowerShell, o WSL si usas Windows).
+Instalar VS Code (si no lo tienes)
+Descárgalo de VS Code
+Instala la extensión “SQLTools” y su plugin de PostgreSQL. Esto te permitirá conectarte a tu base de datos desde VS Code.
+Paso 2: Levantar PostgreSQL con Docker
+
+Abre tu terminal y escribe esto línea por línea:
+
+docker run --name postgres-db \
+ -e POSTGRES_USER=admin \
+ -e POSTGRES_PASSWORD=admin123 \
+ -e POSTGRES_DB=mi_db \
+ -p 5432:5432 \
+ -d postgres
+Esto creará un contenedor con PostgreSQL corriendo.
+Puedes verificar que está activo con:
+docker ps
+
+Deberías ver un contenedor llamado postgres-db en ejecución. ✅
+
+Paso 3: Conectarte desde VS Code
+Abre VS Code → presiona Ctrl+Shift+P → busca SQLTools: Add new connection.
+Elige PostgreSQL y completa:
+Connection Name: MiDBLocal (o el nombre que quieras)
+Server/Host: localhost
+Port: 5432
+Database: mi_db
+Username: admin
+Password: admin123
+Guarda la conexión y prueba conectarte. Si todo está bien, VS Code se conectará a tu base de datos. 🎉
+Paso 4: Crear tu primera base de datos
+
+Ya conectado, puedes crear otra base de datos desde VS Code:
+
+CREATE DATABASE prueba_db;
+Esto crea una nueva base de datos llamada prueba_db.
+Puedes cambiarte a ella con:
+\c prueba_db
+
+Y listo, ya tienes PostgreSQL corriendo, conectado a VS Code y listo para usar. 💪
+
+Si quieres, puedo hacer un mini tutorial gráfico mostrando Docker → PostgreSQL → VS Code con todas las conexiones y pasos visuales, para que quede clarísimo.
+
+¿Quieres que haga eso?
+}
