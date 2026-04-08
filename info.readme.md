@@ -305,34 +305,3 @@ Solo dime 👍
 
 # yo debo practicar 3h diarias
 
--- paginas que hay que descargar
-https://www.postman.com/
-
-{
-https://supabase.com/
----- PASSWORD-------
-(12345678Curso·ALCE)
-}
-https://www.pgadmin.org/
-https://sqlitebrowser.org/dl/
-https://www.docker.com/
-
-{
-https://www.enterprisedb.com/
------ password ----
-**\***cursoalce**\***
-
-puerto:
-5432
-}
-
-{
-https://sqlite.org/
-
-}
-
-{// paginas que hay que ver
-
-postman
-pandorafms (https://www.ilerna.es/blog)
-}

@@ -120,11 +120,12 @@ HTML
 </div>
 <ul id="listaTareas"></ul>
 JavaScript / TypeScript
+
 type Tarea = {
   id: number;
   nombre: string;
   completada: boolean;
-};
+}
 
 // Array para almacenar tareas
 const tareas: Tarea[] = [];
