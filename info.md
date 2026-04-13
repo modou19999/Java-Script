@@ -14,3 +14,6 @@
 
 - YouTube ( node y expres)
   https://www.youtube.com/watch?v=yd_QpXWrbtQ&list=PL4ONm-ifcbQJHg52qGN9GbMAhqK-mC2-y&index=4
+
+- YouTube ( SQL)
+  https://www.youtube.com/watch?v=6JBsoPOwPew&list=PL4ONm-ifcbQJHg52qGN9GbMAhqK-mC2-y&index=8
