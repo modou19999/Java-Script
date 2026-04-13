@@ -17,3 +17,6 @@
 
 - YouTube ( SQL)
   https://www.youtube.com/watch?v=6JBsoPOwPew&list=PL4ONm-ifcbQJHg52qGN9GbMAhqK-mC2-y&index=8
+
+- DB BROWSER
+  https://www.youtube.com/watch?v=sblB5IZ7b-Y
