@@ -20,3 +20,8 @@
 
 - DB BROWSER
   https://www.youtube.com/watch?v=sblB5IZ7b-Y
+
+- hasta aquí para cursos
+
+- pg
+  https://node-postgres.com/
