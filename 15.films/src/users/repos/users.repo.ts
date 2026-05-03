@@ -50,7 +50,7 @@ export class UsersRepo {
         const payload: TokenPayload = {
             id: result.id,
             email: result.email,
-            role: result.role,
+            role: result.role as string,
         };
         const token = AuthService.generateToken(payload);
         return { payload, token };

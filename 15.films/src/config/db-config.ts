@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-import { PrismaPg } from '@prisma/adapter-pg';
 import debug from 'debug';
 import { env } from './env.ts';
 
@@ -9,11 +8,7 @@ log('Loaded database connection...');
 export type AppPrismaClient = PrismaClient;
 
 export const createPrisma = (): AppPrismaClient => {
-    const adapter = new PrismaPg({
-        connectionString: process.env.DATABASE_URL,
-    });
-
-    const prisma = new PrismaClient({ adapter });
+    const prisma = new PrismaClient();
 
     prisma
         .$connect()

@@ -47,15 +47,11 @@ export class UsersController {
             const loginResult: LoginResult = await this.#repo.login(loginData);
             return res.json(loginResult);
         } catch (error) {
+            console.log('Login error:', error);
             return next(
-                new HttpError(
-                    401,
-                    'Unauthorized',
-                    'Invalid email or password',
-                    {
-                        cause: error,
-                    },
-                ),
+                new HttpError(401, 'Unauthorized', (error as Error).message, {
+                    cause: error,
+                }),
             );
         }
     }
