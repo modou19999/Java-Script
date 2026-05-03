@@ -15,6 +15,9 @@ import { UsersRouter } from './users/router/users.routes.ts';
 import { GenresRepo } from './genres/repos/genres.repo.ts';
 import { GenresController } from './genres/controllers/genres.controller.ts';
 import { GenresRouter } from './genres/router/genres.routes.ts';
+import { FilmsRepo } from './films/repos/films.repo.ts';
+import { FilmsController } from './films/controllers/films.controller.ts';
+import { FilmsRouter } from './films/router/films.routes.ts';
 import { AuthInterceptor } from './middleware/auth.interceptor.ts';
 import type { TokenPayload } from './types/login.ts';
 
@@ -55,6 +58,11 @@ export const createApp = (prisma: AppPrismaClient) => {
     const genresController = new GenresController(genresRepo);
     const genresRouter = new GenresRouter(genresController, authInterceptor);
     app.use('/api/genres', genresRouter.router);
+
+    const filmsRepo = new FilmsRepo(prisma);
+    const filmsController = new FilmsController(filmsRepo);
+    const filmsRouter = new FilmsRouter(filmsController, authInterceptor);
+    app.use('/api/films', filmsRouter.router);
 
     app.use((_req, _res, next) => {
         const error = new HttpError(404, 'Not Found', 'Resource not found');
