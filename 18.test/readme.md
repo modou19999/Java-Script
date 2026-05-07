@@ -10,8 +10,16 @@
 - npm run test:node
 - npm run test
 
+- npx vitest --help
+
+
+// Globals
+// coverage
+
+
 // `importante` entender
 `GIVE` `then` `When`
+tambien ver `Mock` o `mockImplementacion`
 
 **MOCHA** / **CHAI**
 **JASMINE**
