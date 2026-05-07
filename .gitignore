@@ -4,3 +4,4 @@ NODE_MODULES
 
 /generated/prisma
 .env
+.env.test
