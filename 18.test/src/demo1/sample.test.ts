@@ -39,7 +39,7 @@ describe('Given add function', () => {
         const b = 3;
         const expected = 23;
         // Act
-        const result = add(a, b);
+        const result = add(a, b); 
         // Add your expectations here
         expect(result).toBe(expected);
     });

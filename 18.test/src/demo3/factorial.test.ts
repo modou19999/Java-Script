@@ -15,7 +15,7 @@ describe('factorial', () => {
     });
 
     test('factorial of 171 throw an error', () => {
-        expect(() => factorial(171)).toThrow('Invalid input');
+        expect(() => factorial(171)).toThrow('Invalid input'); 
     });
     test('factorial of -2 throw an error', () => {
         expect(() => factorial(-2)).toThrow('Invalid input');

@@ -15,7 +15,7 @@ describe('Given fizzBuzz function', () => {
             const input = 3;
             const expectedOutput = 'Fizz';
             // Act
-            const result = fizzBuzz(input);
+            const result = fizzBuzz(input); 
             // Assert
             expect(result).toBe(expectedOutput);
         });

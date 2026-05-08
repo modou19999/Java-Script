@@ -11,6 +11,7 @@
 - npm run test
 
 - npx vitest --help
+- npm i -D vitest @vitest/coverage-v8
 
 // Globals
 // coverage

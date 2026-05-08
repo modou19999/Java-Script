@@ -2,7 +2,7 @@ import { env } from './env.ts';
 import debug from 'debug';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { PrismaClient } from '../../generated/prisma/client.ts';
-
+//generated/prisma/client.ts
 const log = debug(`${env.PROJECT_NAME}:configDB`);
 
 log('Loaded database connection...');
