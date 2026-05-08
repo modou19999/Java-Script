@@ -12,14 +12,12 @@
 
 - npx vitest --help
 
-
 // Globals
 // coverage
 
-
 // `importante` entender
 `GIVE` `then` `When`
-tambien ver `Mock` o `mockImplementacion`
+también ver `Mock` o `mockImplementacion`
 
 **MOCHA** / **CHAI**
 **JASMINE**
