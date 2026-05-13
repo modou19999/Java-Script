@@ -3,6 +3,7 @@ import { navigate } from './core/router/router';
 
 console.log('Load main');
 
+export const API_URL = 'http:localhost:3000/api';
 // Componente app
 App.render();
 
@@ -14,4 +15,3 @@ window.addEventListener('popstate', (event) => {
     console.log('Current location', location.pathname);
     navigate(location.href, false);
 });
-
