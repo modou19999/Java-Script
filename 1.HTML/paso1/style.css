@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* para este proyecto */
+    --color-bg-page: #fafafa;
+    --color-bg-surface: #f2f0ec;
+    --color-border: #e4e2db;
+    --color-text: #2c2b28;
+    --color-text-muted: #6b6962;
+    --color-accent: #a8916f;
+}
+
+body {
+    background-color: var(--color-bg-page);
+    color: var(--color-text-muted);
+    font-family: sans-serif;
+
+    margin-left: 0.3rem;
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.encaezado {
+    background-color: var(--color-text);
+    border-radius: 10px 10px 0 0;
+
+    /* title */
+    h1 {
+        color: var(--color-bg-page);
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,21 @@
+:root {
+    /* Fondos */
+    --color-bg-page: #fafafa;
+    --color-bg-surface: #f2f0ec;
+    --color-bg-muted: #ede8df;
+
+    /* Bordes y divisores */
+    --color-border-light: #e4e2db;
+    --color-border-mid: #b8b6af;
+
+    /* Textos */
+    --color-text-primary: #2c2b28;
+    --color-text-secondary: #6b6962;
+    --color-text-hint: #b8b6af;
+
+    /* Acentos cálidos */
+    --color-accent-light: #c9bba8;
+    --color-accent-mid: #a8916f;
+    --color-accent-dark: #7a6251;
+    --color-accent-deeper: #4a3728;
+}
